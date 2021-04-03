@@ -14,7 +14,6 @@
 `psql`
 3. Enter : 
 `ALTER SYSTEM SET listen_addresses TO '*';`
-
 ![nmknk](/assets/m_alter_listen.png)
 
 4. Return back to postgres user : ctrl + d.
