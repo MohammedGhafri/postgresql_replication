@@ -29,7 +29,7 @@
 ![nmknk](assets/privilege_master.png)
 
 
-8.Restart your postgresql service : 
+8. Restart your postgresql service : 
 `systemctl reload postgresql.service`
 
 
