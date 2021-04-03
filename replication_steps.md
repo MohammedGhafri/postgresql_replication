@@ -26,7 +26,6 @@
 7. Head to privilege at the bottom, then add this line :
 
     `host    replication     name_for_repliactation      <slave_machine_ip>/0       md5`
-
 ![nmknk](assets/privilege_master.png)
 
 
