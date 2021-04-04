@@ -50,6 +50,9 @@ become postgres user then enter :
 
 
 
-For reference : [Replication Steps](https://minervadb.xyz/step-by-step-postgresql-12-streaming-replication-on-ubuntu/)
+For reference : 
+1. [Replication Steps](https://minervadb.xyz/step-by-step-postgresql-12-streaming-replication-on-ubuntu/)
+1. [LINKEDIN](https://www.linkedin.com/in/mohammadghafri/)
+
 
     
