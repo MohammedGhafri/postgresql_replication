@@ -18,14 +18,14 @@
 
 4. Return back to postgres user : ctrl + d.
 5. Create user  with replication property then it will ask you to enter password by the command : 
-`createuser --replication -P -e <name_for_replication>`
+`createuser --replication -P -e <name_for_replication_user>`
 ![nmknk](assets/m_rep_create_user.png)
 
 6. Edit pg_hba.conf file :
-` nano /etc/postgresql/12//main/pg_hba.conf`
+` nano /etc/postgresql/12/main/pg_hba.conf`
 7. Head to privilege at the bottom, then add this line :
 
-    `host    replication     name_for_replication      <slave_machine_ip>/0       md5`
+    `host    replication     name_for_replication_user      <slave_machine_ip>/0       md5`
 ![nmknk](assets/privilege_master.png)
 
 
@@ -45,8 +45,8 @@ become postgres user then enter :
 
 `rm -rf /var/lib/postgresql/12/main/*`
 
-4. Do the replicaction by : 
-`pg_basebackup -h <master_machine_ip> -D /var/lib/postgresql/12/main -U <name_for_replication> -P -v -R -X stream -C -S node2`
+4. Do the replication by : 
+`pg_basebackup -h <master_machine_ip> -D /var/lib/postgresql/12/main -U <name_for_replication_user> -P -v -R -X stream -C -S node2`
 
 
 
