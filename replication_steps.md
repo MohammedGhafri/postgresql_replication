@@ -1,4 +1,4 @@
-# How to stup Replication in POSTGRESQL (12)
+# How to setup Replication in POSTGRESQL (12)
 
 ### 1. Requirements: 
     1. Two Machines.
