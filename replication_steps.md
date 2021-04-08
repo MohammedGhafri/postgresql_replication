@@ -50,6 +50,16 @@ become postgres user then enter :
 
 
 
+
+# Edit Master ip address
+
+#### In case of your Master device changed his ip address, you need to edit `primary_conninfo` in **the slave** machine
+## How to restart streaming when your master ip has changed :
+1. Head towards and open  recovery.conf file: nano /var/lib/postgresql/11/main/recovery.conf .
+2. Change host to the new ip then save and **restart** your standby postgres: systemctl restart postgresql-12.service
+
+
+
 For reference : 
 1. [Replication Steps](https://minervadb.xyz/step-by-step-postgresql-12-streaming-replication-on-ubuntu/)
 1. [LINKEDIN](https://www.linkedin.com/in/mohammadghafri/)
