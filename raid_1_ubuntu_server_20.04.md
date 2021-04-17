@@ -26,4 +26,12 @@
   * Head toward md1. select Add GPT partition and modify mount  to  **/**.
 8. By now, We are ready to go.
 
+
+Refrence : 
+1. [LINKEDIN](https://www.linkedin.com/in/mohammadghafri/)
+
 # THe END
+
+
+
+
